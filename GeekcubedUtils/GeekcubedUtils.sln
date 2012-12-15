@@ -1,7 +1,42 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeekcubedUtils", "GeekcubedUtils\GeekcubedUtils.csproj", "{CC76EB2A-145F-4E98-92A8-A92AB6F448FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeekcubedUtilsTest", "GeekcubedUtilsTest\GeekcubedUtilsTest.csproj", "{E25B19C6-4597-4289-83CE-A6DCABF07812}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{609BFEA6-482E-4BDF-9C87-3ED74BAB2797}"
+	ProjectSection(SolutionItems) = preProject
+		GeekcubedUtils.vsmdi = GeekcubedUtils.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E91B7700-E17A-4BA1-88BC-6E25DC0BD389}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = GeekcubedUtils.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC76EB2A-145F-4E98-92A8-A92AB6F448FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC76EB2A-145F-4E98-92A8-A92AB6F448FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC76EB2A-145F-4E98-92A8-A92AB6F448FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC76EB2A-145F-4E98-92A8-A92AB6F448FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E25B19C6-4597-4289-83CE-A6DCABF07812}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E25B19C6-4597-4289-83CE-A6DCABF07812}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E25B19C6-4597-4289-83CE-A6DCABF07812}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E25B19C6-4597-4289-83CE-A6DCABF07812}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
