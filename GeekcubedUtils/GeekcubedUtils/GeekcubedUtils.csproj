@@ -40,6 +40,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.Helpers.dll</HintPath>
@@ -52,6 +53,7 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20715.0\lib\net40\System.Web.Razor.dll</HintPath>
     </Reference>
+    <Reference Include="System.Web.Routing" />
     <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll</HintPath>
@@ -71,12 +73,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constants.cs" />
     <Compile Include="DataAnnotations\LocalisedDescriptionAttribute.cs" />
     <Compile Include="DataAnnotations\LocalisedDisplayNameAttribute.cs" />
     <Compile Include="DataAnnotations\PropertiesMustMatchAttribute.cs" />
     <Compile Include="DataAnnotations\SortableAttribute.cs" />
     <Compile Include="DataAnnotations\TokenValidationAttribute.cs" />
     <Compile Include="DataAnnotations\VatNumberAttribute.cs" />
+    <Compile Include="Linq\SelectListComparator.cs" />
+    <Compile Include="Linq\Dynamics.cs" />
+    <Compile Include="Localisation\LocalisedEnum.cs" />
+    <Compile Include="Mvc\HtmlHelpers.cs" />
+    <Compile Include="Mvc\PagedListBinder.cs" />
+    <Compile Include="Mvc\PagedListHelper.cs" />
+    <Compile Include="PagedList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
