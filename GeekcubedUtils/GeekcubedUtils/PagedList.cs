@@ -24,7 +24,21 @@ namespace GeekcubedUtils
     /// An extension of the default List object to provide enhancments for rendering data in GUI.
     /// 
     /// PagedList provides support for not only paging results, but also filtering and sorting.
+    /// 
+    /// Primarily designed for rendering results in MVC Web applications
     /// </summary>
+    /// <example>
+    /// public ActionResult Index(int? page, [ModelBinder(typeof(PagedListBinder))] SortOption? sort)
+    /// {
+    ///     var networks = new PagedList<User>(
+    ///                         accountsService.GetUsers(),
+    ///                         page.HasValue ? page.Value : PagedList<User>.FirstPage,
+    ///                         10,
+    ///                         sort);
+    ///
+    ///     return View(networks);
+    /// }
+    /// </example>
     public class PagedList<T> : List<T>
     {
         public const int FirstPage = 1;

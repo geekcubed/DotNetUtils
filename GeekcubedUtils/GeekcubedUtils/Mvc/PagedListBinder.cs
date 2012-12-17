@@ -19,6 +19,15 @@ namespace GeekcubedUtils.Mvc
 {
     public class PagedListBinder : IModelBinder
     {
+        /// <summary>
+        /// MVC Model Binder for automatically binding the request parameters for a PagedList sort to an instance of
+        /// SortOption
+        /// </summary>
+        /// <param name="controllerContext"></param>
+        /// <param name="bindingContext"></param>
+        /// <returns></returns>
+        /// <example>public ActionResult Index(int? page, [ModelBinder(typeof(PagedListBinder))] SortOption? sort)</example>
+        /// <see cref="SortOption"/>
         public object BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
         {
             //Does the request contain the minimum parameters for sortng a PagedList?
